@@ -1,0 +1,81 @@
+:root {
+  /* Backgrounds */
+  --bg: #07100b; /* Fond principal */
+  --bg-2: #0d1712; /* Sections */
+  --bg-3: #14231b; /* Cards / panneaux */
+
+  /* Text */
+  --text: #f5f8f5;
+  --text-muted: #d4ddd6;
+  --text-sub: #91a598;
+
+  /* Accent */
+  --accent: #5fa86a; /* Vert principal */
+  --accent-hover: #76bf81;
+  --accent-dark: #3e7046;
+
+  /* Borders */
+  --border: rgba(95, 168, 106, 0.14);
+  --border-strong: rgba(95, 168, 106, 0.35);
+
+  /* Navigation */
+  --nav-bg: rgba(13, 23, 18, 0.72);
+  --nav-bg-scroll: rgba(7, 16, 11, 0.94);
+
+  /* Components */
+  --radius: 16px;
+  --radius-sm: 10px;
+
+  /* Shadows */
+  --shadow: rgba(0, 0, 0, 0.35);
+  --shadow-strong: rgba(0, 0, 0, 0.6);
+
+  /* Optional */
+  --success: #6fcf97;
+  --warning: #d6b45e;
+  --danger: #c25b5b;
+
+  /* Transitions */
+  --t-fast: 150ms ease;
+  --t-base: 250ms ease;
+  --t-slow: 600ms ease;
+
+  /* Animation duration — overridden to 0 for reduced-motion */
+  --anim: 1;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  color: var(--text);
+  font-family: "Inter", system-ui, sans-serif;
+  overflow-x: hidden;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 60px;
+  background: var(--nav-bg);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--border);
+  transition:
+    padding var(--t-base),
+    background var(--t-base);
+  contain: layout style;
+}
