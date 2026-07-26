@@ -3,3 +3,37 @@ body {
     linear-gradient(rgba(5, 11, 8, 0.75), rgba(5, 11, 8, 0.9)),
     url("../images/mainBackground.png");
 }
+
+.hero {
+  min-height: 80vh;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  max-width: 900px;
+
+  margin: auto;
+}
+
+.hero h1 {
+  font-size: 5rem;
+
+  line-height: 1;
+}
+
+.hero span {
+  display: block;
+
+  color: var(--accent);
+}
+
+.hero p {
+  font-size: 1.3rem;
+
+  max-width: 600px;
+
+  color: var(--text-muted);
+}
