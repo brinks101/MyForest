@@ -3,3 +3,79 @@ body {
     linear-gradient(rgba(5, 11, 8, 0.75), rgba(5, 11, 8, 0.9)),
     url("../images/hobbiesBackground.png");
 }
+
+.hobbies {
+  max-width: 1100px;
+
+  margin: 140px auto 80px;
+}
+
+.hobbies-header {
+  text-align: center;
+
+  margin-bottom: 70px;
+}
+
+.hobbies-header h1 {
+  font-size: 4rem;
+
+  margin-bottom: 15px;
+}
+
+.hobbies-header p {
+  color: var(--text-muted);
+
+  font-size: 1.2rem;
+}
+
+.hobbies-grid {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+  gap: 30px;
+}
+
+.hobby-card {
+  padding: 30px;
+
+  min-height: 280px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  background: rgba(13, 23, 18, 0.75);
+
+  border: 1px solid var(--border);
+
+  border-radius: 20px;
+
+  backdrop-filter: blur(15px);
+
+  transition: 0.3s ease;
+}
+
+.hobby-card:hover {
+  transform: translateY(-10px);
+
+  border-color: var(--accent);
+}
+
+.hobby-card h2 {
+  margin-top: 0;
+}
+
+.hobby-card p {
+  color: var(--text-muted);
+
+  flex-grow: 1;
+}
+
+.hobby-card span {
+  color: var(--accent);
+
+  font-size: 0.9rem;
+
+  font-weight: 600;
+}
